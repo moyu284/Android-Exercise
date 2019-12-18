@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class Main5Activity extends AppCompatActivity {
     private MiddleFragment middleFragment;
     private CollegeFragment collegeFragment;
     private Button primaryBtn,middleBtn,collegeBtn;
+    private MediaPlayer music;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,8 @@ public class Main5Activity extends AppCompatActivity {
         primaryBtn = findViewById(R.id.primaryBtn);
         middleBtn = findViewById(R.id.middleBtn);
         collegeBtn = findViewById(R.id.collegeBtn);
+        music = MediaPlayer.create(this,R.raw.music);
+        music.start();
         primaryBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
