@@ -64,4 +64,10 @@ public class Main5Activity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fl,fragment);
         fragmentTransaction.commit();
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        music.stop();
+    }
 }
