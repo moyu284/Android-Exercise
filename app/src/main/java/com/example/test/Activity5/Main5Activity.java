@@ -17,7 +17,7 @@ public class Main5Activity extends AppCompatActivity {
     private PrimaryFragment primaryFragment;
     private MiddleFragment middleFragment;
     private CollegeFragment collegeFragment;
-    private Button primarBtn,middleBtn,collegeBtn;
+    private Button primaryBtn,middleBtn,collegeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +29,10 @@ public class Main5Activity extends AppCompatActivity {
         primaryFragment = new PrimaryFragment();
         middleFragment = new MiddleFragment();
         collegeFragment = new CollegeFragment();
-        primarBtn = findViewById(R.id.primaryBtn);
+        primaryBtn = findViewById(R.id.primaryBtn);
         middleBtn = findViewById(R.id.middleBtn);
         collegeBtn = findViewById(R.id.collegeBtn);
-        primarBtn.setOnClickListener(new View.OnClickListener() {
+        primaryBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 replaceFragment(primaryFragment);
