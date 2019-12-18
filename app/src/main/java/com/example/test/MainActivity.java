@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.test.Activity2.Main2Activity;
+
 
 public class MainActivity extends AppCompatActivity{
 private EditText nameEdt;
@@ -21,7 +23,7 @@ private Button logBtn;
     }
     protected void initView(){
         nameEdt = findViewById(R.id.nameEdt);
-        passwordEdt = findViewById(R.id.passwardEdt);
+        passwordEdt = findViewById(R.id.passwordEdt);
         logBtn = findViewById(R.id.logBtn);
         logBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +31,12 @@ private Button logBtn;
                 String name = nameEdt.getText().toString();
                 String password = passwordEdt.getText().toString();
                 if (name.equals("admin")&&password.equals("1")){
-                    Intent intent = new Intent();
+                    Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                    startActivity(intent);
+//                    finish();
+                }
+                else{
+                    finish();
                 }
             }
         });
