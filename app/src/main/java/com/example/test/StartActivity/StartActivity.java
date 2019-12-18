@@ -1,4 +1,4 @@
-package com.example.test.Activity1;
+package com.example.test.StartActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.test.MainActivity;
+import com.example.test.Activity1.MainActivity;
 import com.example.test.R;
 
 public class StartActivity extends AppCompatActivity {

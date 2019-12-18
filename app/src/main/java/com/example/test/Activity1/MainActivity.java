@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.test.Activity1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.test.Activity2.Main2Activity;
+import com.example.test.R;
 
 
 public class MainActivity extends AppCompatActivity{

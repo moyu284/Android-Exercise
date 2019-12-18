@@ -5,23 +5,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".Activity2.Main2Activity">
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <Button
+            android:id="@+id/toastBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:typeface="sans"
+            android:textColor="#00ff00"
+            android:text="显示Toast" />
 
-    <Button
-        android:id="@+id/button3"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:textColor="#ff00ff"
+            android:textSize="10dp"
+            android:text="显示Toast" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/alertDialogBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:typeface="monospace"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="显示AlertDialog" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:background="#ffd700"
+            android:textColor="#0000ff"
+            android:textSize="20dp"
+            android:text="显示AlertDialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/togoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:typeface="sans"
+            android:background="#ff0000"
+            android:textSize="30dp"
+            android:text="跳转" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:background="#0000ff"
+            android:textSize="30dp"
+            android:text="跳转" />
+    </LinearLayout>
 </LinearLayout>
