@@ -27,6 +27,7 @@
                 <action android:name="broadcast"></action>
             </intent-filter>
         </receiver>
+        <service android:name=".Activity5.MusicService"></service>
     </application>
 
 </manifest>
